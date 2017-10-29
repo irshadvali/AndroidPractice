@@ -7,3 +7,13 @@
 
 
 ifconfig | grep inet
+
+
+Wireless Debug
+
+echo export "PATH=~/Library/Android/sdk/platform-tools:$PATH" >> ~/.bash_profile
+
+adb connect
+adb tcpip 5555
+adb connect 192.168.0.4:555      (192.168.0.4   mobile ip)
+now it connected (First time u have to connect device via cable and following all above step)
