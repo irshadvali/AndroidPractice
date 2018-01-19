@@ -17,3 +17,8 @@ adb connect
 adb tcpip 5555
 adb connect 192.168.0.4:5555     (192.168.0.4   mobile ip)
 now it connected (First time u have to connect device via cable and following all above step)
+
+
+
+git config --global user.email "email@example.com"
+git config --global user.name "user"
