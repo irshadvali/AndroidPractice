@@ -22,3 +22,7 @@ now it connected (First time u have to connect device via cable and following al
 
 git config --global user.email "email@example.com"
 git config --global user.name "user"
+
+Show user name===>
+git config user.name
+git config user.email
