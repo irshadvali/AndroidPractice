@@ -67,7 +67,9 @@ An asynchronous task is defined by a computation that runs on a background threa
 
 
 
-private class DownloadFilesTask extends AsyncTask<URL, Integer, Long> {
+
+
+    private class DownloadFilesTask extends AsyncTask<URL, Integer, Long> {
      protected Long doInBackground(URL... urls) {
          int count = urls.length;
          long totalSize = 0;
@@ -87,8 +89,7 @@ private class DownloadFilesTask extends AsyncTask<URL, Integer, Long> {
      protected void onPostExecute(Long result) {
          showDialog("Downloaded " + result + " bytes");
      }
- }
-
+    }
 
 Once created, a task is executed very simply:
 
