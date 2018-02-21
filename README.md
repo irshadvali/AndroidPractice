@@ -94,3 +94,18 @@ An asynchronous task is defined by a computation that runs on a background threa
 Once created, a task is executed very simply:
 
 new DownloadFilesTask().execute(url1, url2, url3);
+
+
+# Services Behaviour
+ START_STICKEY == 1-> Services are being explicity managed and long running
+                  2-> No need to remember state at kill time
+                  3->Long running music plaing service
+                  
+  START_NOT_SSTICKEY == 1-> Services are being not explicity managed
+                        2-> Service are periodically running and self stopping
+                        3-> Alarm services or server data polling
+  START_REDELIVER_INTENT == 1-> Services are being explicity managed
+                            2-> Resart from previous state at the kill time
+                            3-> File download
+
+
