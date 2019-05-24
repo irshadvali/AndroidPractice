@@ -111,4 +111,35 @@ new DownloadFilesTask().execute(url1, url2, url3);
                             3-> File download
 
 
-# =================================React native ==========================
+# =====React native =====
+
+# HOC
+
+Full page Spinner on login page
+1- Fullpage Spinner comopnent using as HOC and this use in Login component
+### FullScreenSpinnerHOC.js
+
+```
+import React from 'react';
+import { View, StyleSheet, ActivityIndicator } from 'react-native';
+
+export default (Comp: ReactClass<*>) => {
+  return ({ spinner, children, ...props }: Object) => (
+    <View style={{ flex: 1 }}>
+      <Comp {...props}>
+        {children}
+      </Comp>
+      {spinner &&
+        <View
+          style={[
+            StyleSheet.absoluteFill,
+            { backgroundColor: 'rgba(0, 0, 0, 0.7)', justifyContent: 'center' }
+          ]}
+        >
+          <ActivityIndicator size="large" />
+        </View>}
+    </View>
+  );
+};
+
+```
