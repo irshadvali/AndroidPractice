@@ -2,9 +2,14 @@
 # =====React native =====
 
 # HOC
+##### What is Higher Order Component or HOC?
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React's compositional nature. Concretely, a higher-order component is a function that takes a component and returns a new component
 
-Full page Spinner on login page
+HOC is a function that takes React Component as input and outputs a new React Component.
+
+Full page Spinner on login page.
 1- Fullpage Spinner comopnent using as HOC and this use in Login component
+
 ##### FullScreenSpinnerHOC.js
 
 ```
